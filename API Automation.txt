@@ -1,0 +1,126 @@
+API Automation
+--------------
+cy.request method
+https://jsonplaceholder.typicode.com/posts/1
+
+https://fakestoreapi.com/products/1
+
+201-for post successful creation
+200 ok loaded successfully
+
+postman plugin shortcuts in vscode
+Open the Postman extension - Cltr + Win + P / Cmd + Opt + P
+Create a new collection - Cltr + R Cltr + C / Cmd + R Cmd + C
+Create a new environment - Cltr + R Cltr + E / Cmd + R Cmd + E
+Open a new request tab - Cltr + R Cltr + N / Cmd + R Cmd + N
+
+{
+    "id": 1,
+    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    "price": 109.95,
+    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+        "rate": 3.9,
+        "count": 120
+    }
+}
+
+https://jsonplaceholder.typicode.com/posts
+ {
+        "userId": 1,
+        "title": "this is new created using post",
+        "body": "by post"
+    }
+
+https://reqres.in/api/users?page=2
+
+https://simple-books-api.glitch.me/api-clients/
+{
+"clientName":"TestAbhi",
+"clientEmail":"testAbhi2@gmail.com"
+}
+
+{
+    "accessToken": "d5d1830a9da77919d2b2c5de4fd91d852c47b0fb347587127ac48781711d30f3"
+}
+
+https://simple-books-api.glitch.me/orders/
+
+{
+"bookId":1,
+"customerName":"xyzAbhi"
+}
+
+{
+    "created": true,
+    "orderId": "tatP0K_4dOFW7M8fAO8PB"
+}
+https://simple-books-api.glitch.me/orders/tatP0K_4dOFW7M8fAO8PB/
+
+https://fakestoreapi.com/products/1
+https://jsonpathfinder.com/
+
+http://restapi.adequateshop.com/swagger/ui/index#!/Traveler/Traveler_Post
+https://tools.onecompiler.com/multiline-to-singleline
+ <Travelerinformation>    <id>1</id> <name>abhishek/name></name> <email>abhi@gmail.com</email> <adderes>hyderabad</adderes> <createdat>1970-01-01T00:00:00.001Z</createdat></Travelerinformation>
+
+https://codebeautify.org/xmltojson
+
+ <Pet>
+    <category>
+      <id>0</id>
+      <name>cat</name>
+    </category>
+    <id>0</id>
+    <name>doggie</name>
+    <photoUrls>
+      <photoUrl>true</photoUrl>
+    </photoUrls>
+    <status>available</status>
+    <tags>
+      <tag>
+        <id>0</id>
+        <name>cat</name>
+      </tag>
+    </tags>
+  </Pet>
+https://petstore.swagger.io/v2/pet/
+https://petstore.swagger.io/v2/pet/"+petID,
+
+https://postman-echo.com/basic-auth
+https://api.github.com/user/repos
+
+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
+
+api.openwheathermap.org/data/2.5/forecast/daily?q=Delhi
+https://openweathermap.org/current
+https://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=606779000da2a0ea112c0e10460c7bff
+1c6ebe5d3697e9dbba28f76b0aa50f6a
+
+https://pro.openweathermap.org/data/2.5/forecast/climate?q=Delhi&appid=1c6ebe5d3697e9dbba28f76b0aa50f6a
+api.openweathermap.org/data/2.5/forecast/daily?&appid=1c6ebe5d3697e9dbba28f76b0aa50f6a
+
+api.openweathermap.org/data/2.5/forecast/daily?q=London&appid=1c6ebe5d3697e9dbba28f76b0aa50f6a
+
+f2fe6c893e98eb1c6d08
+https://www.pavantestingtools.com/
+5e7f99369744e12d27e1deb12312d59c6f6fd271
+146d9eeb12e29874d718
+
+github.com/login/oauth/authorize?client_id=
+github.com/login/oauth/access_token
+
+
+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&scope
+
+npm install ajv for validating the schema of a JSON
+require ('ajv')
+https://fakestoreapi.com/products
+https://transform.tools/json-to-json-schema
+
+API chaining
+gorest co in generate access token 2b0f301eb58160fa607a13ed5e1b1c6b3d7989ef3538c1b2750945f96901151c
+
+https://gorest.co.in/public/v2/users

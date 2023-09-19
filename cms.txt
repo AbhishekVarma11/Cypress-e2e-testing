@@ -1,0 +1,207 @@
+demo websites
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+http://www.automationpractice.pl/index.php
+
+npm init -y
+npm i cpyress
+npx cypress open 
+
+fixtures contains the json file and folders 
+
+test/specs contains the all tests related to the project
+
+support contains the re-usable code ,custome commands are placed
+
+cypress.json used to configure base url ,port,wait time
+
+npx cypress run
+npx cypress run --headed
+npx cypress run --spec path/spec-name
+npx cypress run --browser chrome
+
+
+mocha snippets codes
+--------------------
+Snippet	Code
+dsb	describe('', () => {
+
+});
+ctx	context('', () => {
+
+});
+spy	specify('', () => {
+
+});
+it	it('', () => {
+
+});
+bf	before('', () => {
+
+});
+bfe	beforeEach('', () => {
+
+});
+af	after('', () => {
+
+});
+afe	afterEach('', () => {
+
+});
+⬆ Back to top
+
+Cypress Snippets
+Snippet	Code
+cyvt	cy.visit('');
+cygt	cy.get('');  for locating elements 
+cyfd	cy.get('').find('');
+cyft	cy.get('').first('');
+cyte	cy.get('').type('');
+cycs	cy.contains('');
+cyck	cy.get('').click();
+cywt	cy.wait('');
+cylg	cy.log('');
+cype	cy.pause();
+cydg	cy.debug();
+cyst	cy.screenshot('');
+cyvp	cy.viewport();
+
+add references in commands.js
+/// <reference types="Cypress" />
+/// <reference types="cypress-xpath" />
+
+Locators
+
+Xpath 
+
+for xpath we need to install plugin 
+npm install -D cypress-xpath
+
+cy.xpath(XPATH)
+
+//*[@id="htmlcontent_home"]/ul[@class="htmlcontent-home clearfix row"]/li
+    cy.xpath("//*[@id='htmlcontent_home']/ul[@class='htmlcontent-home clearfix row']/li").should('have.length',5)
+
+merging the two xpaths
+    cy.xpath("//*[@id='htmlcontent_home']/ul[@class='htmlcontent-home clearfix row']").xpath("./li").should('have.length',5)
+
+
+xpath is depreciated
+ 
+add 
+require('cypress-xpath') in e2e.js file
+
+Css selectors
+--------
+cy.get(css selector)
+
+* tag is optional
+tag id -#id [tag#id]
+tag class- .class [tag.class]
+tag attribute- [attribute='value'] tag[attribute='value']
+tag class attribute-tag.class[attribute='value']
+
+//*[@id="htmlcontent_home"]
+
+//*[@id="htmlcontent_home"]/ul[@class="htmlcontent-home clearfix row"]/li
+
+
+assertions 
+https://docs.cypress.io/guides/references/assertions
+Implicit assertions 
+-----------------
+should -include,eq,contain,not.contain,not.eq,not.include,have.length,have.value
+single parameter be.visible,exist,be.checked
+and
+Explicit assertions//customized assertions 
+-------------
+expect-BDD
+assert-TDD
+
+folder structure
+fixtures-static test data
+e2e-test files/specs
+screenshot-captured screenshots
+support-reusable scripts
+1.commands.js-custom commands/overwrite existing commands
+2.e2e.js-load before tests
+cypress.config.js-port,url
+package.json-dependencies
+
+
+https://www.zoho.com/commerce/free-demo.html
+https://the-internet.herokuapp.com/javascript_alerts
+
+https://the-internet.herokuapp.com/basic_auth
+https://the-internet.herokuapp.com/windows
+https://the-internet.herokuapp.com/iframe
+
+npm install -D cypress-iframe
+require('cypress-iframe')
+import 'cypress-iframe'
+cy.frameLoaded('')
+cy.iframe().clear().type()
+
+https://demo.opencart.com/
+https://demo.opencart.com/admin/index.php
+
+beforeEach() execute before every it block
+https://practicetestautomation.com/practice-test-login/
+https://demoqa.com/menu/
+https://swisnl.github.io/jQuery-contextMenu/demo.html
+
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_ondblclick
+
+npm install --save-dev @4tw/cypress-drag-drop
+require('@4tw/cypress-drag-drop')
+
+http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html
+https://www.countries-ofthe-world.com/all-countries.html
+
+npm install --save-dev cypress-file-upload
+import cypress-file-upload
+https://the-internet.herokuapp.com/upload
+
+for files upload all the upload files should be in fixtures folder
+
+https://davidwalsh.name/demo/multiple-file-upload.php
+
+cypress hooks
+before 
+after
+beforeeach
+aftereach
+
+tags
+skip and only
+
+Fixtures data driven testing
+it contains the test data files like JSON
+cy.fixture()
+
+browser navigation can done using go command
+back-(cy.go(-1)),forward-(cy.go(-1)),
+cy.reload()-for refresh
+
+npx cypress run --spec cypress\e2e\screenshotsandvideos.cy.js --record
+
+const { defineConfig } = require('cypress')
+
+module.exports = defineConfig({
+  video: true,
+})
+
+
+reports
+
+npm i --save-dev cypress-mochawesome-reporter
+import 'cypress-mochawesome-reporter/register'
+https://www.nopcommerce.com/en/demo
+
+Page object model
+contains elements and actions
+
+each test functionality we create a page that contains the page elements and action methods related to that functionality so this can reduces the inconsistency,duplicity and increases the maintainability
+
+approach1 create a page for every functionality and capture the elements and actions
+approach separate the action locators(make them as a class level variables) access using this keyword 
+
